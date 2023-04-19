@@ -41,3 +41,44 @@ for i in range(5):
         max_val = num
 
 print("Maximum of the numbers:", max_val)
+
+
+# Task 4
+# Define a dictionary mapping month names to the number of days
+month_days = {
+    "January": 31,
+    "February": 28,
+    "March": 31,
+    "April": 30,
+    "May": 31,
+    "June": 30,
+    "July": 31,
+    "August": 31,
+    "September": 30,
+    "October": 31,
+    "November": 30,
+    "December": 31
+}
+
+# Prompt user to input the name of the month
+month = input("Input the names of month: ")
+
+# Retrieve the number of days from the dictionary and print it
+days = month_days.get(month.capitalize(), None)
+if days is not None:
+    print(f"Number if days: {days} days")
+else:
+    print("Invalid month name!")
+
+
+
+    # Task 5
+    # Prompt user to input a number
+    num = float(input("Enter a number: "))
+
+
+    # Check if the number is even and divisible by 3 and print appropriate message
+    if num % 2 == 0 and num % 3 == 0:
+        print (f"{int(num)} is even and divisible by  3")
+    else:
+        print(f"{int(num)} is not even divisible by 3")    
