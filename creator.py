@@ -2,7 +2,7 @@ import random
 # List of possible character types
 types = ["Warrior", "Wizard","Potato"]
 
-# Ask user for 5 character namese
+# Ask user for 5 character names
 names = []
 for i in range(5):
     name = input(f"Character {i+1}:")
